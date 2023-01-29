@@ -14,6 +14,7 @@
 		50C327B32986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C327B22986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateTests.swift */; };
 		50C327BD2986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C327BC2986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateUITests.swift */; };
 		50C327BF2986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C327BE2986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateUITestsLaunchTests.swift */; };
+		50C327CD2986F20D00ED324F /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C327CC2986F20D00ED324F /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		50C327B82986E57E00ED324F /* BuckJaw Login Screen Biometrics TemplateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BuckJaw Login Screen Biometrics TemplateUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C327BC2986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuckJaw_Login_Screen_Biometrics_TemplateUITests.swift; sourceTree = "<group>"; };
 		50C327BE2986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuckJaw_Login_Screen_Biometrics_TemplateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50C327CC2986F20D00ED324F /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				50C327A12986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateApp.swift */,
-				50C327A32986E57E00ED324F /* ContentView.swift */,
+				50C327CB2986F1D900ED324F /* Views */,
 				50C327A52986E57E00ED324F /* Assets.xcassets */,
 				50C327A72986E57E00ED324F /* Preview Content */,
 			);
@@ -125,6 +127,15 @@
 				50C327BE2986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateUITestsLaunchTests.swift */,
 			);
 			path = "BuckJaw Login Screen Biometrics TemplateUITests";
+			sourceTree = "<group>";
+		};
+		50C327CB2986F1D900ED324F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50C327A32986E57E00ED324F /* ContentView.swift */,
+				50C327CC2986F20D00ED324F /* Home.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C327A42986E57E00ED324F /* ContentView.swift in Sources */,
+				50C327CD2986F20D00ED324F /* Home.swift in Sources */,
 				50C327A22986E57E00ED324F /* BuckJaw_Login_Screen_Biometrics_TemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
