@@ -127,16 +127,16 @@ struct Home: View {
     }
     //MARK:  RETRIEVE BIOMETRIC TYPE
     func getBioMetricStatus( )-> Bool {
-        let scanner = LAContext()
-        if userName == user && scanner.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: .none) {
+        let context = LAContext()
+        if userName == user && context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: .none) {
             return true
         }
         return false
     }
     //MARK:  AUTHENTICATE USER
     func authenticateUser( ) {
-        let scanner =  LAContext()
-        scanner.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "To unlock \(userName)") { (status, err) in
+        let context =  LAContext()
+        context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: "To unlock \(userName)") { (status, err) in
             if err != nil {
                 print(err!.localizedDescription)
                 return
